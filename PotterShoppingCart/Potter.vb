@@ -1,11 +1,20 @@
 ﻿
 Public Class Potter
 
-    Private _p1 As Integer
+    Private _Episode As Integer
 
-    Sub New(p1 As Integer)
-        ' TODO: Complete member initialization 
-        _p1 = p1
+    Sub New(Episode As Integer)
+        _Episode = Episode
     End Sub
+
+    Public ReadOnly Property Episode As Integer
+        Get
+            Return _Episode
+        End Get
+    End Property
+
+    Function Clone() As Potter
+        Return New Potter(Me._Episode)
+    End Function
 
 End Class
