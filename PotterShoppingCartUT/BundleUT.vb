@@ -1,5 +1,7 @@
 ﻿Imports System.Text
 Imports Microsoft.VisualStudio.TestTools.UnitTesting
+Imports PotterShoppingCartLib
+
 
 <TestClass()> Public Class BundleUT
 
