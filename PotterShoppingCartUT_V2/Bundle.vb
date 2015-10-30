@@ -35,6 +35,8 @@ Class Bundle
                 nReturn = nReturn * 0.9
             Case 4 '4. 如果是四本不同的書，則會有20%的折扣
                 nReturn = nReturn * 0.8
+            Case 5 '5. 如果你一次買了整套一到五集，恭喜你將享有25%的折扣
+                nReturn = nReturn * 0.75
         End Select
         Return nReturn
     End Function
