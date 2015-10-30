@@ -33,4 +33,20 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
         Assert.AreEqual(nExpected, nActual)
     End Sub
 
+    <TestMethod()> Public Sub Buy_One_Book1_and_One_Book2_and_One_Book3_then_Pay_270()
+        'arrang
+        Dim objTarget As PotterShoppingCart = New PotterShoppingCart()
+        Dim nExpected As Integer = 270
+        Dim nActual As Integer = 0
+
+        'act
+        objTarget.add(New Potter(1))
+        objTarget.add(New Potter(2))
+        objTarget.add(New Potter(3))
+        nActual = objTarget.CheckOut()
+
+        'assert
+        Assert.AreEqual(nExpected, nActual)
+    End Sub
+
 End Class
