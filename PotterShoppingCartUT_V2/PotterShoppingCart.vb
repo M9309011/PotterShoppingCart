@@ -5,6 +5,9 @@ Class PotterShoppingCart
     Sub add(p1 As Potter)
         Me.l_objPotters.Add(p1)
     End Sub
+    Sub add(potter As Potter, p2 As Integer)
+        Throw New NotImplementedException
+    End Sub
 
     Function CheckOut() As Integer
         Dim nReturn As Integer = 0
@@ -24,5 +27,7 @@ Class PotterShoppingCart
 
         Return nReturn
     End Function
+
+  
 
 End Class
