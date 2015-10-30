@@ -1,11 +1,16 @@
 ﻿
 Class Potter
 
-    Private _p1 As Integer
+    Private m_nEpisode As Integer
 
     Sub New(p1 As Integer)
-        ' TODO: Complete member initialization 
-        _p1 = p1
+        m_nEpisode = p1
     End Sub
+
+    ReadOnly Property Episode As Integer
+        Get
+            Return Me.m_nEpisode
+        End Get
+    End Property
 
 End Class
