@@ -5,8 +5,11 @@ Class PotterShoppingCart
     Sub add(p1 As Potter)
         Me.l_objPotters.Add(p1)
     End Sub
+
     Sub add(potter As Potter, p2 As Integer)
-        Throw New NotImplementedException
+        For nCount As Integer = 1 To p2
+            Me.add(potter.Clone)
+        Next
     End Sub
 
     Function CheckOut() As Integer
