@@ -1,5 +1,5 @@
 ﻿
-Class Pottert
+Class Potter
 
     Private _p1 As Integer
 

@@ -10,7 +10,7 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
         Dim nActual As Integer = 0
 
         'act
-        objTarget.add(New Pottert(1))
+        objTarget.add(New Potter(1))
         nActual = objTarget.CheckOut()
 
         'assert
