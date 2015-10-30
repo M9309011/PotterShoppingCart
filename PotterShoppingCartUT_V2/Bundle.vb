@@ -25,8 +25,7 @@ Class Bundle
     Function Count() As Integer
         Dim nReturn As Integer = 0
 
-        '1. 一到五集的哈利波特，每一本都是賣100元
-        nReturn = Me.l_objPotters.Count * 100
+        nReturn = Me.l_objPotters.Count * Potter.Price
 
         Select Case Me.l_objPotters.Count
             Case 2 '2. 如果你從這個系列買了兩本不同的書，則會有5%的折扣
@@ -38,6 +37,7 @@ Class Bundle
             Case 5 '5. 如果你一次買了整套一到五集，恭喜你將享有25%的折扣
                 nReturn = nReturn * 0.75
         End Select
+
         Return nReturn
     End Function
 
