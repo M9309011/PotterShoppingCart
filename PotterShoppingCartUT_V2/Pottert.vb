@@ -13,4 +13,8 @@ Class Potter
         End Get
     End Property
 
+    Function Clone() As Potter
+        Return New Potter(Me.m_nEpisode)
+    End Function
+
 End Class
