@@ -18,4 +18,19 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
 
     End Sub
 
+    <TestMethod()> Public Sub Buy_One_Book1_and_One_Book2_then_Pay_190()
+        'arrang
+        Dim objTarget As PotterShoppingCart = New PotterShoppingCart()
+        Dim nExpected As Integer = 190
+        Dim nActual As Integer = 0
+
+        'act
+        objTarget.add(New Potter(1))
+        objTarget.add(New Potter(2))
+        nActual = objTarget.CheckOut()
+
+        'assert
+        Assert.AreEqual(nExpected, nActual)
+    End Sub
+
 End Class
